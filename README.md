@@ -26,7 +26,8 @@ https://user-images.githubusercontent.com/60360657/173238662-8263a1f7-7838-41e7-
 ##Config MAVEN des 2 programmes :
 
 ### Configuration maven pour le programme principal
-![ConfigMavenProgPrincipal](https://user-images.githubusercontent.com/60360657/173238896-a86060dd-8261-493b-93b8-441b70c2ff43.png)
+![ConfigMavenProgPrincipal](https://user-images.githubusercontent.com/60360657/173238966-a3cc0df1-54d2-4473-9c2f-f676146687a2.png)
+
 
 ### Configuration maven pour la pointeuse
-![ConfigMavenPointeuse](https://user-images.githubusercontent.com/60360657/173238923-8b48946e-7dd8-40f2-9bf5-11f275abeb87.png)
+![ConfigMavenPointeuse](https://user-images.githubusercontent.com/60360657/173239014-0c909478-1172-4d92-8e94-97c72d862eeb.png)
