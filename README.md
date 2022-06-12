@@ -18,3 +18,8 @@ https://user-images.githubusercontent.com/60360657/173237232-5db852ba-19c6-4178-
 ## Simuler un pointage
 
 https://user-images.githubusercontent.com/60360657/173238348-50c04e15-27d0-46d2-950f-1c4dcce9eb52.mp4
+
+## Fermeture et re-ouverture de l'application principal
+
+https://user-images.githubusercontent.com/60360657/173238662-8263a1f7-7838-41e7-adef-33b7f5f31463.mp4
+
