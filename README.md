@@ -15,3 +15,5 @@ https://user-images.githubusercontent.com/60360657/173237104-401a0135-3165-479d-
 https://user-images.githubusercontent.com/60360657/173237232-5db852ba-19c6-4178-be42-d60000d73fa0.mp4
 
 ## Simuler un pointage
+
+https://user-images.githubusercontent.com/60360657/173238348-50c04e15-27d0-46d2-950f-1c4dcce9eb52.mp4
