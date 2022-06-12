@@ -8,3 +8,10 @@ https://user-images.githubusercontent.com/60360657/173236980-fe670f04-2057-47df-
 
 ## Modifier / Supprimer un employé
 
+https://user-images.githubusercontent.com/60360657/173237104-401a0135-3165-479d-9710-2e753e1428e7.mp4
+
+## Conecter l'appli principal à la pointeuse
+
+https://user-images.githubusercontent.com/60360657/173237232-5db852ba-19c6-4178-be42-d60000d73fa0.mp4
+
+## Simuler un pointage
