@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/60360657/173236980-fe670f04-2057-47df-
 
 https://user-images.githubusercontent.com/60360657/173237104-401a0135-3165-479d-9710-2e753e1428e7.mp4
 
-## Conecter l'appli principal à la pointeuse
+## Connecter l'appli principal à la pointeuse
 Nota Bene : Dans la video, le deuxième programme une erreur est présente (l'appli principal est réglé sur le port 8079 alors qu'elle devrait être sur 8077, comme la pointeuse). Pour la suite des vidéos on supposera qu'elle est à 8077 et non à 8079 car nous l'avons modifié en dehors des vidéos.
 
 https://user-images.githubusercontent.com/60360657/173237232-5db852ba-19c6-4178-be42-d60000d73fa0.mp4
