@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<TabPane fx:id="IdTablePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.rclens.projetpointeuse.controller.WindowController">
+  <tabs>
+    <Tab text="Check in/out history">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane layoutY="132.0" prefHeight="238.0" prefWidth="600.0" fx:id="IdGridPaneTimeChecks2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="204.60000610351562" minHeight="10.0" prefHeight="191.79998779296875" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="0" fx:id="IdTableViewTimeCheck">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="IdEmployee" fx:id="IdTableColumnIdEmployee"/>
+                            <TableColumn prefWidth="75.0" text="LastName" fx:id="IdTableColumnLastName"/>
+                              <TableColumn prefWidth="75.0" text="FirstName" fx:id="IdTableColumnFirstName"/>
+                              <TableColumn prefWidth="75.0" text="Dept" fx:id="IdTableColumnDept"/>
+                              <TableColumn prefWidth="75.0" text="Date" fx:id="IdTableColumnDate"/>
+                              <TableColumn prefWidth="75.0" text="Time" fx:id="IdTableColumnTime"/>
+                              <TableColumn prefWidth="75.0" text="In/Out" fx:id="IdTableColumnInOut"/>
+                              <TableColumn prefWidth="75.0" text="OnTime" fx:id="IdTableColumnOnTime"/>
+                          </columns>
+                  		</TableView>
+                     </children>
+                  </GridPane>
+                  <RadioButton fx:id="IdRadioButtonToday" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Today">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgDate" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="IdRadioButtonAllTime" layoutX="82.0" layoutY="51.0" mnemonicParsing="false" text="All Time" toggleGroup="$tgDate" />
+                  <Button fx:id="IdButtonRefreshTimeChecks" layoutX="532.0" layoutY="69.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="64.0" text="Refresh" onAction="#clickBtnRefreshTimeChecks"/>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Staff management">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+               	  <Button fx:id="ButtonAddEmployee" layoutX="15.0" layoutY="28.0" mnemonicParsing="false" text="Add Employee" />
+                  <Button fx:id="ButtonRefreshEmployeeTable" layoutX="500.0" layoutY="28.0" mnemonicParsing="false" text="Refresh Table" />
+               
+                 <GridPane layoutY="132.0" prefHeight="238.0" prefWidth="600.0" fx:id="IdGridPaneEmployees">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="204.60000610351562" minHeight="10.0" prefHeight="191.79998779296875" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="0" fx:id="IdTableEmployee">
+                          <columns>
+                            <TableColumn prefWidth="100.0" text="IdEmployee" fx:id="IdEmpTableColumnIdEmployee"/>
+                            <TableColumn prefWidth="100.0" text="LastName" fx:id="IdEmpTableColumnLastName"/>
+                              <TableColumn prefWidth="100.0" text="FirstName" fx:id="IdEmpTableColumnFirstName"/>
+                              <TableColumn prefWidth="100.0" text="Dept" fx:id="IdEmpTableColumnDept"/>
+                              <TableColumn prefWidth="100.0" text="Missing Hours ?" fx:id="IdEmpTableColumnMissingHours"/>
+                          </columns>
+                  		</TableView>
+                     </children>
+                  </GridPane>
+               </children>
+           </AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Parameters">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IP Address :" x="100.0" y="100.0" />
+                  <Text layoutX="10.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port :" x="100.0" y="100.0" />
+                  <Button fx:id="BSettingsCancel" layoutX="174.0" layoutY="321.0" mnemonicParsing="false" onAction="#settingsCancel" text="Cancel" />
+                  <Button fx:id="BSettingsSave" layoutX="354.0" layoutY="321.0" mnemonicParsing="false" onAction="#settingsSave" text="Save" />
+                  <TextField fx:id="TFSettingsIpAddress" layoutX="174.0" layoutY="83.0" />
+                  <TextField fx:id="TFSettingsPort" layoutX="162.0" layoutY="116.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>
